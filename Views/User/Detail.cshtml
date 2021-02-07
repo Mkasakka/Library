@@ -1,0 +1,30 @@
+﻿@model Library.Models.User.UserDetailModel
+@{
+    ViewBag.Title = "User Details";
+}
+
+<h3>User Detail</h3>
+<div id="user">
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp customTable" id="userDetailTable">
+        <thead>
+            <tr>
+                <th>Profile Link</th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Library Card Id</th>
+                <th>Overdue Fees</th>
+                <th>Home Library</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="patronIcon"><a asp-controller="User" asp-action="Detail" asp-route-id="@Model.UserID"><i class="fa fa-user fa-2x"></i></a></td>
+                <td>@Model.LastName</td>
+                <td>@Model.FirstName</td>
+                <td>@Model.LibraryCardId</td>
+                <td>@Model.Feed</td>
+                <td>@Model.HomeBrach </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
