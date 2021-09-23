@@ -8,7 +8,7 @@ Learning goals:
 
 Based on  Wes Doyle's YouTube series "ASP.NET Core Web App Tutorial"
 
-The solution is build from three projekts:
+The solution is build from three projects:
 - Library
 - DataLibrary
 - LibraryServices 
